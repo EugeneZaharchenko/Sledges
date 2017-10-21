@@ -9,7 +9,7 @@
 <body>
     <header class="v-header container">
         <div class="fullscreen-video-wrap">
-            <video src="video/Sledges.mp4" autoplay="true" loop muted poster=""></video>
+            <video src="video/Sledges.mp4" autoplay loop muted poster=""></video>
         </div>
         <div class="header-overlay"></div>
         <div class="header-content">
@@ -20,36 +20,51 @@
         </div>
     </header>
 
-    <nav>
+    <nav class="container">
         <ul>
-            <li><a href="#">Главнвя</a></li>
+            <li><a href="#">Главная</a></li>
             <li><a href="#details">Подробнее</a></li>
             <li><a href="#order">Заказать</a></li>
         </ul>
     </nav>
 
+    <section class="section section-goods">
+
+        <div class="container">
+            <div class="box">
+                <img src="img/sanki_express_fyksiya10.jpg" alt="модель санок №1">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="box">
+                <img src="img/smereka-salatovyj-bez-ruchki-vid1.jpg" alt="модель санок №2">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="box">
+                <img src="img/склетон%20лайм.jpg" alt="модель санок №3">
+            </div>
+        </div>
+        <a name="details"></a>
+    </section>
+
+
     <section class="section section-subscribe">
         <div class="container">
         <h1>
-            Рассылка о новых товарах
+            Узнавать о новых товарах
         </h1>
-        </div>
 
-        <form action="">
-            <input type="email" placeholder="эл. почта">
-            <button type="submit" class="subscribe">Подписаться</button>
-        </form>
-    </section>
+            <form action="">
+                <input type="email" placeholder="эл. почта">
+                <button type="submit" class="subscribe">Подписаться</button>
+            </form>
 
-    <section class="section section-goods">
-        <div class="container">
-            <a name="details"></a>
-            <h1>
-                Sec G
-            </h1>
-            <p>Lorem</p>
         </div>
     </section>
+
 
     <section class="section section-order">
         <div class="container">
@@ -60,5 +75,9 @@
             <p>Lorem</p>
         </div>
     </section>
+
+<footer>
+    <p>JWeb&#169 <span>2017</span></p>
+</footer>
 </body>
 </html>
