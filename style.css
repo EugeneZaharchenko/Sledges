@@ -76,7 +76,7 @@ body {
     font-size: 1.8rem;
     display: block;
     padding-bottom: 3rem;
-    margin-bottom: 4rem;
+    margin-bottom: 4vh;
 }
 
 .btn {
@@ -110,12 +110,24 @@ nav li {
     padding: 0 7%;
 }
 
+.section-goods {display: flex;
+flex-direction: row}
+
+.box img {
+    width:70%;
+}
+
 .section {
     padding: 20px 0;
 }
 
-.section-subscribe {
-    background: #333;
+ h2, p {
+     margin: 0 4%;
+     padding: 10px;
+}
+
+.section-subscribe, .section-description {
+    background: #bbc5ff;
     color: white;
 }
 
