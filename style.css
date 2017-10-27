@@ -202,10 +202,12 @@ flex-direction: row}
     bottom: 4.5vh;
     opacity: .4;
     transform: scale(.65);
+    background-color: #656eff;
 }
 
 #top:hover {
     opacity:1;
+    background-color: #fff;
 }
 
 .footer-last {
