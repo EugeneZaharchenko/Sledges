@@ -30,31 +30,31 @@ window.onload = function () {
 
 // (function() {
 
-function ScrollHide ( element ) {
-
-    this.viewport = document.getElementById( "site" );
-    this.element = document.getElementById( element );
-    this.elementHeight = this.element.offsetHeight;
-
-    this.scrollElement = function() {
-        var self = this;
-        self.viewport.addEventListener( "scroll", function() {
-            var top = this.scrollTop;
-
-            if( top > self.elementHeight ) {
-                self.element.className = "hidden";
-            } else {
-                self.element.className = "";
-            }
-
-        }, false);
-    };
-
-    this.scrollElement();
-}
-
-document.addEventListener( "DOMContentLoaded", function() {
-    var scrollHideInstance = new ScrollHide( "banner" );
-});
-
-})();
+// function ScrollHide ( element ) {
+//
+//     this.viewport = document.getElementById( "site" );
+//     this.element = document.getElementById( element );
+//     this.elementHeight = this.element.offsetHeight;
+//
+//     this.scrollElement = function() {
+//         var self = this;
+//         self.viewport.addEventListener( "scroll", function() {
+//             var top = this.scrollTop;
+//
+//             if( top > self.elementHeight ) {
+//                 self.element.className = "hidden";
+//             } else {
+//                 self.element.className = "";
+//             }
+//
+//         }, false);
+//     };
+//
+//     this.scrollElement();
+// }
+//
+// document.addEventListener( "DOMContentLoaded", function() {
+//     var scrollHideInstance = new ScrollHide( "banner" );
+// });
+//
+// })();
