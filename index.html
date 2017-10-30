@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Buy sledges">
+    <meta name="keywords" content="sledges,sanki,winter">
+    <meta name="author" content="JWeb">
     <link rel="stylesheet" href="style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="fav_icon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="fav_icon/favicon-32x32.png">
@@ -19,7 +22,7 @@
 <body>
     <header class="v-header container">
         <div class="fullscreen-video-wrap">
-            <video src="video/Sledges.mp4" autoplay loop muted poster=""></video>
+            <video src="video/Sledges.mp4" autoplay loop muted poster="Санки"></video>
         </div>
         <div class="header-overlay"></div>
         <div class="header-content">
@@ -31,8 +34,8 @@
     </header>
 
     <nav class="navbar">
-        <span class="open-slide">
-            <a href="#">
+        <span id="open-slide">
+            <a href="#" onclick="openSlideMenu()">
                 <svg width="30" height="30">
                     <path d="M0,5 30,5" stroke="#656eff" stroke-width="5"></path>
                     <path d="M0,14 30,14" stroke="#656eff" stroke-width="5"></path>
@@ -47,13 +50,13 @@
             <li><a href="#order">Заказать</a></li>
         </ul>
     </nav>
-    <div id="side-menu" class="side-nav">
-        <a href="" class="btn-close">&times;</a>
-        <a href="">Главная</a>
-        <a href="">Подробнее</a>
-        <a href="">Заказать</a>
-    </div>
 
+    <aside id="side-menu">
+        <a href="#" id="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="#top">О нас</a>
+        <a href="#details">Подробнее</a>
+        <a href="#order">Заказать</a>
+    </aside>
 
     <div class="pimg1">
     <section class="section section-description">
@@ -65,7 +68,6 @@
             <p>Продуманный ассортимент включает санки для любого возраста и назначения: рыбацкие санки-стул, детские санки, подростковые скоростные санки, оригинальные сани с узорами.</p>
             <p class="non-mobile">Для создания санок применяются надёжные материалы – сталь и натуральное дерево. Полимерное покрытие придает изделиям эффектный вид и надолго сохраняет металл от коррозии.</p>
     </section>
-
     </div>
 
     <section class="section section-goods">

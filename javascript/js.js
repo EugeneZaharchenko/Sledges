@@ -19,6 +19,21 @@ window.onload = function () {
     }
 }
 
+// document.getElementById('open-slide a').onclick = openSlideMenu();
+// document.getElementById('btn-close').onclick = closeSlideMenu();
+
+
+function openSlideMenu(){
+    document.getElementById('side-menu').style.width = '25%';
+    document.getElementById('side-menu').style.display = 'block';
+}
+
+function closeSlideMenu(){
+    document.getElementById('side-menu').style.width = '0';
+    document.getElementById('side-menu').style.display = 'none';
+    document.getElementById('side-menu').style.color = '#ff9e79';
+}
+
 // window.onkeydown = function(event){
 //     if(event.keyCode==123){
 //         return false;
