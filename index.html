@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Buy sledges">
-    <meta name="keywords" content="sledges,sanki,winter">
+    <meta name="description" content="Коллекция санок от украинского производителя ТМ Vitan – это более 25 моделей санок на Ваш выбор. На нашем сайте представлены санки от украинского производителя ТМ Vitan для продажи в г.Каменское">
+    <meta name="keywords" content="sledges, sanki, winter, санки, детские санки, купить санки, саночки, санчата, санки Днепродзержинск, санки Каменское">
     <meta name="author" content="JWeb">
     <link rel="stylesheet" href="style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="fav_icon/apple-touch-icon.png">
@@ -34,14 +34,13 @@
     </header>
 
     <nav class="navbar">
-        <span id="open-slide">
-            <a href="#" onclick="openSlideMenu()">
+        <span id="open-slide" onclick="openSlideMenu()" style="cursor: pointer;">
+
                 <svg width="30" height="30">
                     <path d="M0,5 30,5" stroke="#656eff" stroke-width="5"></path>
                     <path d="M0,14 30,14" stroke="#656eff" stroke-width="5"></path>
                     <path d="M0,23 30,23" stroke="#656eff" stroke-width="5"></path>
                 </svg>
-            </a>
         </span>
 
         <ul class="navbar-nav">
@@ -52,7 +51,7 @@
     </nav>
 
     <aside id="side-menu">
-        <a href="#" id="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <div id="btn-close" onclick="closeSlideMenu()" style="cursor: pointer;">&times;</div>
         <a href="#top">О нас</a>
         <a href="#details">Подробнее</a>
         <a href="#order">Заказать</a>
@@ -78,6 +77,7 @@
                 <div class="container">
                     <div class="box">
                         <a href=""><img class="ri" src="img/sanki_express_fyksiya10.jpg" alt="модель санок №1"></a>
+                        <p class="price">607 грн.</p>
                         <p><abbr title="Скоростные и эргономичные санки обеспечат отличный спуск даже на рыхлом и мокром снегу благодаря плоским полозьям. Сидение санок выполнено из четырех планок натурального дерева.">Санки спорт F1</abbr></p>
                     </div>
                 </div>
@@ -85,6 +85,7 @@
                 <div class="container">
                     <div class="box">
                         <img class="ri" src="img/smereka-salatovyj-bez-ruchki-vid1.jpg" alt="модель санок №2">
+                        <p class="price">607 грн.</p>
                         <p><abbr title="Санки 'Экспресс' выполнены из стальной трубы с плоскоовальными полозьями и сложной спинкой из двух диаметров. Сидение выполнено из натурального дерева.  Отличная покупка для зимних развлечений.">Санки "Экспресс"</abbr></p>
                     </div>
                 </div>
@@ -92,6 +93,7 @@
                 <div class="container">
                     <div class="box">
                         <img class="ri" src="img/склетон%20лайм.jpg" alt="модель санок №3">
+                        <p class="price">607 грн.</p>
                         <p><abbr title="Скоростные и эргономичные санки обеспечат отличный спуск даже на рыхлом и мокром снегу благодаря плоским полозьям. Сидение санок выполнено из четырех планок натурального дерева.">Санки Спорт 'F1'</abbr></p>
                     </div>
                 </div>
@@ -106,6 +108,7 @@
                 <div class="container">
                     <div class="box">
                         <a href=""><img class="ri" src="img/balu.jpg" alt="модель санок №1"></a>
+                        <p class="price"><span class="discount">415 грн.</span>389 грн.</p>
                         <p><abbr title="Яркие и красивые санки «Балу» - отличный подарок для детей. Планки сидения выполнены из дерева, удобная глубокая спинка обеспечат безопасность и комфорт ребенку.">Балу</abbr></p>
                     </div>
                 </div>
@@ -113,6 +116,7 @@
                 <div class="container">
                     <div class="box">
                         <img class="ri" src="img/malysh.jpg" alt="модель санок №2">
+                        <p class="price"><span class="discount">415 грн.</span>389 грн.</p>
                         <p><abbr title="Универсальные и прочные детские санки «Малыш» – это качество и доступная цена от торговой марки Витан в Украине. Эта модель санок идельно подойдет для детей маленького возраста. Сидение выполнено из натурального дерева, высокая спинка обеспечит безопасность для ребенка.">Санки "Малыш"</abbr></p>
                     </div>
                 </div>
@@ -120,6 +124,7 @@
                 <div class="container">
                     <div class="box">
                         <img class="ri" src="img/oven.jpg" alt="модель санок №3">
+                        <p class="price"><span class="discount">415 грн.</span>389 грн.</p>
                         <p><abbr title="Оригинальные и яркие детские санки «Овен» – отличный бюджетный выбор для активного зимнего отдыха детей разного возраста. Санки небольшого размера, что позволяет перевозить их в авто или нести в руках, если это необходимо.">Санки "Овен"</abbr></p>
                     </div>
                 </div>
@@ -142,12 +147,8 @@
     </div>
 
 
-
     <section class="section section-subscribe">
-        <div class="container">
-        <!--<h1>-->
-            <!---->
-        <!--</h1>-->
+        <a id="phone" href="tel:+380972849149"><button>Позвонить</button><img src="https://bf-website-uploads-production.s3.amazonaws.com/uploads/2016/04/phone-image-480x480.jpg"></a>
 
             <form action="">
                 <label for="subscribe"><span>Узнавать о новых товарах</span></label>
@@ -155,8 +156,8 @@
                 <input type="submit" name="" value="Подписаться">
             </form>
 
-        </div>
     </section>
+
 
 <footer>
     <div class="footer-nav">

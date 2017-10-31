@@ -103,6 +103,7 @@ body {
     position: sticky;
     top: 0;
     height: 50px;
+    background-color: rgba(221, 221, 221, 0.61)
 }
 
 .navbar-nav {
@@ -111,9 +112,12 @@ body {
 
 nav ul {
     -margin: -20px 0;
-    width:100%;}
+    width:100%;
+    }
 
-nav a{text-decoration: none;
+nav a{
+    font-weight: bold;
+    text-decoration: none;
     text-transform: capitalize;
     font-size: 20px;
     color: black;
@@ -123,9 +127,11 @@ nav a:hover {
     color: #ff9e79;
 }
 
-/*.btn-close {  */
-    /*margin-left: 7%;*/
-/*}*/
+#btn-close {
+    padding: 0 80%;
+    font-size: 30px;
+    color: #ff9e79;
+}
 
 #side-menu {
     display: flex;
@@ -140,7 +146,7 @@ nav a:hover {
     opacity: .8;
     overflow-x: hidden;
     padding-top: 5vh;
-    transition: .7s;
+    transition: 1.7s;
 
 }
 
@@ -155,9 +161,9 @@ nav a:hover {
     color: white;
 }
 
-#side-menu a:active {
-    color: #ff9e79;
-}
+/*#side-menu a:active {*/
+    /*color: #ff9e79;*/
+/*}*/
 
 nav li {
     display: inline-flex;
@@ -169,6 +175,18 @@ nav li {
     display: flex;
     flex-direction: column;
     }
+
+.price {
+    font-family: "Droid Sans", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.discount {
+    color: #ff1c36;
+    text-decoration: line-through;
+    margin: 0 5%;
+}
 
 .hit .hit-wrap, .best-price-wrap {
     display: flex;
@@ -182,6 +200,7 @@ nav li {
 
 .box img {
     max-width: 50%;
+    margin-bottom: -8%;
 }
 
 .section-description {
@@ -190,19 +209,37 @@ nav li {
     color: white;
 }
 
-.section-description h1, p {
-    text-align: center;
-    margin: 0 4%;
-    padding: 2% 1%;
-}
+/*.section-description p {*/
+    /*text-align: center;*/
+    /*margin: 0 4%;*/
+    /*padding: 2% 1%;*/
+/*}*/
 
 .section-subscribe {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
+    font-size: 1.5rem;
 }
 
-.section-subscribe h1 {
-    padding-right: 25%;
+.section-subscribe a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.section-subscribe img {
+    width: 10%;
+    margin: 2px 3%;
+}
+
+.section-subscribe button {
+    width: auto;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
 }
 
 .pimg1, .pimg2 {
@@ -237,6 +274,7 @@ nav li {
 
 .section-order span:hover {
     color: #ff9e79;
+    background-color: #72688f;
 }
 
 .section-order img {
@@ -312,7 +350,6 @@ nav li {
 
 @media (max-width: 568px)  {
 
-
     .navbar-nav{display:none}
 
     .section-description {
@@ -321,15 +358,37 @@ nav li {
         padding: 1% 5%;
     }
 
+    .box img {
 
+    }
+
+    .section-subscribe form {
+        display: none;
+    }
+
+    #phone {
+        margin-left: 28%;
+    }
 
     .pimg1, .pimg2 {
         background-attachment: scroll;
     }
 }
 
+img.ri {
+    margin-top: 10vh;
+}
+
 img.ri:empty {
     transform: translate(.5, .5)
+}
+
+@media (min-width: 568px) {
+    #phone {
+        display: none;
+    }
+
+
 }
 
 @media screen and (orientation: portrait) {
