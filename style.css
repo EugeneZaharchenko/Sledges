@@ -200,6 +200,79 @@ nav li {
     margin-bottom: -8%;
 }
 
+#img1:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 11; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .all {
     text-align: center;
     margin: 15vh 0;
@@ -413,7 +486,11 @@ nav li {
 }
 
 
-@media (max-width: 1920px)  {}
+@media (max-width: 1920px)  {
+    body {
+        max-width: 1920px;
+    }
+}
 
 @media (max-width: 1024px)  {
     .header-content h1 {
@@ -430,17 +507,6 @@ nav li {
 }
 
     @media screen and (max-width: 768px){
-
-        .fullscreen-video-wrap video{
-            visibility: hidden;
-        }
-
-        .header-overlay {
-            background: -webkit-linear-gradient(#274046, #e6dada);
-            background: -o-linear-gradient(#274046, #e6dada);
-            background: -moz-linear-gradient(#274046, #e6dada);
-            background: linear-gradient(#274046, #e6dada);
-        }
 
         .header-content h1 {
             display: none;
@@ -462,6 +528,14 @@ nav li {
 
         .non-mobile {
             display: none;
+        }
+
+        .all .first-row-min, .second-row-min {
+            flex-direction: column;
+        }
+
+        .all .first-row-min a img, .second-row-min a img {
+            width: 10%;
         }
 
         .additional {
@@ -489,9 +563,20 @@ nav li {
         }
 
         img.ri { max-height: 90%; }
-    }}
+    }
+}
 
 @media (max-width: 568px)  {
+
+    .fullscreen-video-wrap video{
+        visibility: hidden;
+    }
+
+    .header-overlay {
+        background: -webkit-linear-gradient(#274046, #e6dada);
+        background: -o-linear-gradient(#274046, #e6dada);
+        background: -moz-linear-gradient(#274046, #e6dada);
+        background: linear-gradient(#274046, #e6dada);}
 
     .navbar-nav{display:none}
 
@@ -499,6 +584,10 @@ nav li {
         -webkit-flex-wrap: wrap;
         flex-wrap: wrap;
         padding: 1% 5%;
+    }
+
+    .all .first-row-min a img, .second-row-min a img {
+        width: 20%;
     }
 
     .additional {
@@ -548,5 +637,4 @@ img.ri:empty {
     #open-slide, #side-menu {
         display: none;
     }
-
 }
