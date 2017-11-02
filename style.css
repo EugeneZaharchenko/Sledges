@@ -228,6 +228,10 @@ nav li {
     border-radius: 8px;
 }
 
+.second-row-min img {
+    width: 17%;
+}
+
 .additional {
     margin: 4vh 0;
     display: flex;
@@ -246,14 +250,19 @@ nav li {
     flex: 2;
 }
 
-.additional img {
+.additional .box img {
+    margin-top: 0;
     justify-content: flex-start;
     width: 80%;
 }
 
 .additional table, th {
-    font-size: 1.1em;
+    font-size: .7em;
     width: auto;
+}
+
+.additional th {
+    font-size: 1em;
 }
 
 .additional td {
@@ -315,9 +324,9 @@ nav li {
     text-align: center;
 }
 
-/*.section-order h1 {*/
-    /*margin-left: 40%;*/
-/*}*/
+.section-order h1 {
+    padding-top: 4vh;
+}
 
 /*.section-order p {*/
     /*padding-left: 33%;*/
