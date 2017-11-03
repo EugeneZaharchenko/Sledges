@@ -34,14 +34,14 @@ function closeSlideMenu(){
     document.getElementById('side-menu').style.color = '#ff9e79';
 }
 
-window.onkeydown = function(event){
-    if(event.keyCode==123){
-        return false;
-    }
-    else if(event.ctrlKey && event.shiftKey && event.keyCode==73){
-        return false;
-    }
-};
+// window.onkeydown = function(event){
+//     if(event.keyCode==123){
+//         return false;
+//     }
+//     else if(event.ctrlKey && event.shiftKey && event.keyCode==73){
+//         return false;
+//     }
+// };
 
 
 var modal = document.getElementById('myModal');
