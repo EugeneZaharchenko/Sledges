@@ -556,14 +556,15 @@ nav li {
 @media (max-width: 568px)  {
 
     body {
-        width: 95%;
-        overflow-x: scroll;
+        width: 100%;
+        overflow-x: hidden;
     }
 
     .container {
         max-width: 100%;
     }
-    .fullscreen-video-wrap video{
+
+    .fullscreen-video-wrap video, .header-overlay {
         visibility: hidden;
     }
 
@@ -572,17 +573,7 @@ nav li {
         background: -o-linear-gradient(#274046, #e6dada);
         background: -moz-linear-gradient(#274046, #e6dada);
         background: linear-gradient(#274046, #e6dada);
-        left: auto;
-        width: inherit;
-    }
-
-    .header-overlay {
-        display: none;
-        }
-
-
-    .v-header container {
-
+        width: 100%;
     }
 
     .navbar-nav{display:none}
@@ -659,9 +650,19 @@ img.ri:empty {
     }
 }
 
-@media screen and (orientation: portrait) {
-    body {display: flex;
+@media screen and (orientation: portrait) and (max-width: 568px){
+    body {
+        width: 100%;
+        min-width: 576px;
     }
 
-    img.ri { max-width: 90%;}
+    .header-content {
+        width: 100%;
+    }
+
+    .fullscreen-video-wrap {
+        width: 568px;
+    }
+
+    img.ri { max-width: 95%;}
 }
