@@ -9,8 +9,8 @@ window.onload = function () {
     function scrollToTop() {
         if (scrolled > 0) {
             window.scrollTo(0, scrolled);
-            scrolled -= 150;
-            timer = setTimeout(scrollToTop, 320);
+            scrolled -= 250;
+            timer = setTimeout(scrollToTop, 120);
         }
         else {
             clearTimeout(timer);
@@ -34,14 +34,35 @@ function closeSlideMenu(){
     document.getElementById('side-menu').style.color = '#ff9e79';
 }
 
-// window.onkeydown = function(event){
-//     if(event.keyCode==123){
-//         return false;
-//     }
-//     else if(event.ctrlKey && event.shiftKey && event.keyCode==73){
-//         return false;
-//     }
-// };
+window.onkeydown = function(event){
+    if(event.keyCode==123){
+        return false;
+    }
+    else if(event.ctrlKey && event.shiftKey && event.keyCode==73){
+        return false;
+    }
+};
+
+
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('img1');
+var modalImg = document.getElementById("imgModal1");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
 
 // (function() {
 
