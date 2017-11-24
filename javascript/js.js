@@ -23,13 +23,29 @@ window.onload = function () {
             window.scrollTo(0, 0);
         }
     }
+}
 
-    // function scrollToDown() {
-    //     while (scrolled < 700) {
-    //         window.scrollTo(0, scrolled);
-    //         scrolled += 70;
-    //         timer = setTimeout(scrollToDown, 250);}
-    // }
+function sound() {
+    var play = document.getElementById("sound");
+    play.play();
+}
+
+document.getElementById('go_button').addEventListener('click', function(e) {
+    e.preventDefault();  // запрет перехода по ссылке, вместо него скрипт
+    scrollToDown();
+    point = 0;
+}, false);
+
+var point = window.pageYOffset;
+var timer_down;
+
+function scrollToDown() {
+    sound();
+    if (point < 920) {
+        window.scrollTo(0, point);
+        point += 60;
+        timer_down = setTimeout(scrollToDown, 80);
+    }
 }
 
 // document.getElementById('open-slide a').onclick = openSlideMenu();
@@ -75,14 +91,16 @@ var span = document.getElementsByClassName("close")[0];
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     modal.style.display = "none";
-}
+};
 
-var go_button = document.getElementById("go_button");
 
-go_button.onclick = function () {
-    var play = document.getElementById("sound");
-    play.play();
-}
+
+
+// function sound_and_go() {
+//     sound();
+//     scrollToDown()
+// }
+
 // (function() {
 
 // function ScrollHide ( element ) {
