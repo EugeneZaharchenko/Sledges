@@ -62,15 +62,15 @@ function closeSlideMenu(){
     document.getElementById('side-menu').style.display = 'none';
     document.getElementById('side-menu').style.color = '#ff9e79';
 }
-//Need to use before deploy!!!
-// window.onkeydown = function(event){
-//     if(event.keyCode==123){
-//         return false;
-//     }
-//     else if(event.ctrlKey && event.shiftKey && event.keyCode==73){
-//         return false;
-//     }
-// };
+// Need to use before deploy!!!
+window.onkeydown = function(event){
+    if(event.keyCode==123){
+        return false;
+    }
+    else if(event.ctrlKey && event.shiftKey && event.keyCode==73){
+        return false;
+    }
+};
 
 
 var modal = document.getElementById('myModal');
