@@ -173,6 +173,7 @@ nav li {
     }
 
 .price {
+    color: black;
     font-family: "Droid Sans", sans-serif;
     font-size: 1.1rem;
     font-weight: 700;
@@ -412,10 +413,18 @@ nav li {
     height: 50%;
 }
 
-.section-order img:hover {
+#address-img {
+    transition-property: width;
+    transition-duration: 2s;
+    transition-delay: 1.3s;
+    transition-timing-function: ease-out
+}
+
+#address-img:hover {
     width: 50%;
     object-fit:cover;
 }
+
 #top {
     position: fixed;
     right: 20px;
